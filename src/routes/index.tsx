@@ -280,7 +280,7 @@ function WolfGym() {
             style={{ animationDelay: '0.1s' }}
           >
             <span className="py-2 px-6 bg-red-600 text-white text-xs md:text-sm font-bold uppercase tracking-[0.2em] skew-x-[-10deg] inline-block shadow-xl hover:scale-105 transition-transform duration-300">
-              <span className="skew-x-[10deg] block">Wolf Gym Rende</span>
+              <span className="skew-x-10 block">Wolf Gym Rende</span>
             </span>
           </div>
 
@@ -289,7 +289,7 @@ function WolfGym() {
             style={{ animationDelay: '0.2s' }}
           >
             DIVENTARE{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-800 drop-shadow-sm">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-red-600 to-red-800 drop-shadow-sm">
               FORTE
             </span>
             <br />È UNA SCELTA
@@ -347,9 +347,9 @@ function WolfGym() {
       </div>
 
       {/* MISSION / CHI SIAMO */}
-      <section id="chi-siamo" className="py-24 md:py-32 bg-white">
+      <section id="chi-siamo" className="py-12 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-6xl font-black text-slate-900 mb-20 uppercase tracking-tight">
+          <h2 className="text-4xl md:text-6xl font-black text-slate-900 mb-12 md:mb-20 uppercase tracking-tight">
             SOLO OBIETTIVI{' '}
             <span className="relative inline-block text-red-600">
               WOLF
@@ -397,14 +397,14 @@ function WolfGym() {
       {/* SERVIZI */}
       <section
         id="servizi"
-        className="py-24 bg-slate-50 relative overflow-hidden"
+        className="py-12 md:py-24 bg-slate-50 relative overflow-hidden"
       >
         {/* Decorative elements */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-red-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50 translate-x-1/2 -translate-y-1/2"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-slate-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50 -translate-x-1/2 translate-y-1/2"></div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="text-center mb-20">
+          <div className="text-center mb-12 md:mb-20">
             <span className="text-red-600 font-bold tracking-[0.2em] uppercase text-sm mb-4 block">
               Cosa offriamo
             </span>
@@ -435,7 +435,7 @@ function WolfGym() {
       </section>
 
       {/* ORARI */}
-      <section className="py-24 bg-slate-900 text-white relative overflow-hidden">
+      <section className="py-12 md:py-24 bg-slate-900 text-white relative overflow-hidden">
         {/* Background pattern */}
         <div
           className="absolute inset-0 opacity-10 pointer-events-none"
@@ -446,7 +446,7 @@ function WolfGym() {
           }}
         ></div>
 
-        <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-16 lg:gap-24 relative z-10">
+        <div className="max-w-7xl mx-auto px-6  flex flex-col lg:flex-row items-center gap-16 lg:gap-24 relative z-10">
           <div className="lg:w-1/2">
             <h2 className="text-4xl md:text-6xl font-black mb-8 uppercase leading-[0.9]">
               NON CI SONO
@@ -516,9 +516,9 @@ function WolfGym() {
       </section>
 
       {/* ABBONAMENTI */}
-      <section id="abbonamenti" className="py-24 bg-white">
+      <section id="abbonamenti" className="py-12 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl md:text-6xl font-black text-center text-slate-900 mb-20 uppercase tracking-tight">
+          <h2 className="text-4xl md:text-6xl font-black text-center text-slate-900 mb-12 md:mb-20 uppercase tracking-tight">
             SCEGLI IL TUO PIANO
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
@@ -584,9 +584,9 @@ function WolfGym() {
       </section>
 
       {/* RECENSIONI GOOGLE STYLE */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-12 md:py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 md:mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-slate-900 uppercase tracking-tight mb-4">
               COSA DICONO I NOSTRI CLIENTI
             </h2>
@@ -642,7 +642,10 @@ function WolfGym() {
       </section>
 
       {/* MAPPA / CONTATTI */}
-      <section id="contatti" className="bg-slate-900 text-white pt-24 pb-12">
+      <section
+        id="contatti"
+        className="bg-slate-900 text-white pt-12 md:pt-24 pb-12"
+      >
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16">
           <div>
             <h2 className="text-4xl md:text-5xl font-black mb-12 uppercase">
