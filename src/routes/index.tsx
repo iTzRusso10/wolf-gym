@@ -717,7 +717,7 @@ function WolfGym() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              className="grayscale hover:grayscale-0 transition-all duration-500 opacity-80 hover:opacity-100"
+              className="lg:grayscale hover:grayscale-0 transition-all duration-500 lg:opacity-80 hover:opacity-100"
             />
           </div>
         </div>
