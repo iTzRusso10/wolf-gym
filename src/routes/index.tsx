@@ -309,9 +309,10 @@ function WolfGym() {
           >
             <a
               href="#abbonamenti"
-              className="px-8 py-4 bg-slate-900 text-white font-bold text-lg hover:bg-red-600 transition-all duration-300 shadow-xl hover:shadow-red-600/30 flex items-center justify-center gap-3 group"
+              className="px-8 py-4 bg-slate-900 text-white font-bold text-lg hover:bg-red-600 transition-all duration-300 shadow-xl flex items-center justify-center gap-3 animate-gentlePulse"
+              style={{ animationDelay: '0s' }}
             >
-              INIZIA OGGI{' '}
+              INIZIA OGGI
               <ArrowRight
                 size={20}
                 className="group-hover:translate-x-1 transition-transform"
@@ -319,7 +320,8 @@ function WolfGym() {
             </a>
             <a
               href="#contatti"
-              className="px-8 py-4 border-2 border-slate-900 text-slate-900 font-bold text-lg hover:bg-slate-900 hover:text-white transition-all duration-300"
+              className="px-8 py-4 border-2 border-slate-900 text-slate-900 font-bold text-lg hover:bg-slate-900 hover:text-white transition-all duration-300 animate-gentlePulse"
+              style={{ animationDelay: '1s' }}
             >
               VIENI A TROVARCI
             </a>
