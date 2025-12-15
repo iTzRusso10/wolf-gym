@@ -470,7 +470,7 @@ function WolfGym() {
                   key={idx}
                   className="flex justify-between items-center border-b border-slate-800 pb-4 group hover:border-red-900 transition-colors"
                 >
-                  <span className="font-bold text-xl group-hover:text-white transition-colors text-slate-300">
+                  <span className="font-bold text-base mr-2 md:text-xl group-hover:text-white transition-colors text-slate-300">
                     {orario.day}
                   </span>
                   <span className="text-red-500 font-mono font-bold text-2xl group-hover:text-red-400 transition-colors">
