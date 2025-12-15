@@ -1,6 +1,6 @@
 import { Link } from '@tanstack/react-router'
-import { useState, useEffect } from 'react'
-import { Menu, X, Phone } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { Menu, Phone, X } from 'lucide-react'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
