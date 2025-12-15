@@ -321,7 +321,7 @@ function WolfGym() {
               href="#contatti"
               className="px-8 py-4 border-2 border-slate-900 text-slate-900 font-bold text-lg hover:bg-slate-900 hover:text-white transition-all duration-300"
             >
-              PRENOTA VISITA
+              VIENI A TROVARCI
             </a>
           </div>
         </div>
@@ -376,7 +376,7 @@ function WolfGym() {
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="group p-10 border border-slate-100 hover:border-red-600 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(220,38,38,0.1)] bg-white relative overflow-hidden"
+                className="group p-10 border border-slate-200 hover:border-red-600 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(220,38,38,0.1)] bg-white relative overflow-hidden"
               >
                 <div className="absolute top-0 left-0 w-1 h-full bg-red-600 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"></div>
                 <div className="w-20 h-20 bg-slate-50 text-red-600 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300">
@@ -462,9 +462,10 @@ function WolfGym() {
             </p>
             <div className="grid grid-cols-1 gap-6">
               {[
-                { day: 'Lunedì - Venerdì', time: '07:00 - 23:00' },
-                { day: 'Sabato', time: '09:00 - 19:00' },
-                { day: 'Domenica', time: '10:00 - 13:00' },
+                { day: 'Lun - Mer - Ven', time: '08:00 - 21:00' },
+                { day: 'Mar - Gio', time: '08:00 - 19:30' },
+                { day: 'Sabato', time: '10:00 - 12:30' },
+                { day: 'Domenica', time: 'Chiuso' },
               ].map((orario, idx) => (
                 <div
                   key={idx}
@@ -591,7 +592,7 @@ function WolfGym() {
               COSA DICONO I NOSTRI CLIENTI
             </h2>
             <div className="flex items-center justify-center gap-2 text-slate-600">
-              <span className="font-bold">4.9</span>
+              <span className="font-bold">5.0</span>
               <div className="flex text-yellow-400">
                 {[1, 2, 3, 4, 5].map((n) => (
                   <Star key={n} size={20} fill="currentColor" />
