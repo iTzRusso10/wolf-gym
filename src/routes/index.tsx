@@ -453,7 +453,7 @@ function WolfGym() {
             <h2 className="text-4xl md:text-6xl font-black mb-8 uppercase leading-[0.9]">
               NON CI SONO
               <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-red-500 to-red-700">
                 SCUSE
               </span>
             </h2>
@@ -464,9 +464,9 @@ function WolfGym() {
             </p>
             <div className="grid grid-cols-1 gap-6">
               {[
-                { day: 'Lun - Mer - Ven', time: '08:00 - 21:00' },
-                { day: 'Mar - Gio', time: '08:00 - 19:30' },
-                { day: 'Sabato', time: '10:00 - 12:30' },
+                { day: 'Lun - Mer - Ven', time: '08:00 - 23:00' },
+                { day: 'Mar - Gio', time: '08:00 - 16:30' },
+                { day: 'Sabato', time: '10:00 - 18:30' },
                 { day: 'Domenica', time: 'Chiuso' },
               ].map((orario, idx) => (
                 <div
