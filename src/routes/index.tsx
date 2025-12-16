@@ -524,7 +524,7 @@ function WolfGym() {
           <h2 className="text-4xl md:text-6xl font-black text-center text-slate-900 mb-12 md:mb-20 uppercase tracking-tight">
             SCEGLI IL TUO PIANO
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
             {plans.map((plan, i) => (
               <div
                 key={i}
