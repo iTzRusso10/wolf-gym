@@ -283,9 +283,9 @@ function WolfGym() {
               <span className="skew-x-10 block">Wolf Gym Rende</span>
             </span>
           </div>
-
+          <h1 className="sr-only">Palestra Rende - Wolf Gym</h1>
           <h1
-            className="text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 mb-8 leading-[0.9] tracking-tighter animate-fade-in-up"
+            className="text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 mb-8  tracking-tighter animate-fade-in-up"
             style={{ animationDelay: '0.2s' }}
           >
             DIVENTARE{' '}
@@ -294,7 +294,11 @@ function WolfGym() {
             </span>
             <br />È UNA SCELTA
           </h1>
-
+          <p className="sr-only">
+            Wolf Gym è una <strong>palestra a Rende</strong> dedicata a chi
+            vuole risultati reali, con sala pesi attrezzata, corsi e allenamenti
+            personalizzati.
+          </p>
           <p
             className="text-lg md:text-xl lg:text-2xl text-slate-600 max-w-2xl mx-auto mb-12 font-medium leading-relaxed animate-fade-in-up"
             style={{ animationDelay: '0.3s' }}
