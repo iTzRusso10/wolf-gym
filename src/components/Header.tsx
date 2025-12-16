@@ -53,7 +53,7 @@ export default function Header() {
             href="tel:3473020924"
             className="flex items-center gap-2 px-5 py-2.5 bg-red-600 hover:bg-slate-900 text-white font-bold rounded-none skew-x-[-10deg] transition-all transform hover:scale-105"
           >
-            <span className="skew-x-[10deg] flex items-center gap-2">
+            <span className="skew-x-10 flex items-center gap-2">
               <Phone className="w-4 h-4" />
               347 302 0924
             </span>
@@ -70,27 +70,57 @@ export default function Header() {
       </div>
 
       {/* Mobile Navigation */}
-      {isOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-t border-slate-100 shadow-xl p-6 flex flex-col gap-4">
+      {/* Overlay */}
+      <div
+        className={`fixed inset-0 bg-black/60 z-40 transition-opacity duration-300 ${
+          isOpen
+            ? 'opacity-100 pointer-events-auto'
+            : 'opacity-0 pointer-events-none'
+        }`}
+        onClick={() => setIsOpen(false)}
+      />
+
+      {/* Mobile Menu */}
+      <div
+        className={`fixed top-0 right-0 h-full w-72 bg-white z-50 shadow-xl transform transition-transform duration-300 ease-in-out ${
+          isOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        {/* Header menu */}
+        <div className="flex items-center justify-between p-6 border-b">
+          <span className="font-black text-lg text-red-600">MENU</span>
+          <button
+            onClick={() => setIsOpen(false)}
+            className="text-slate-900 hover:text-red-600 transition-colors"
+          >
+            <X size={28} />
+          </button>
+        </div>
+
+        {/* Links */}
+        <div className="p-6 flex flex-col gap-5">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="text-lg font-bold text-slate-800 hover:text-red-600"
+              className="text-lg font-bold text-slate-800 hover:text-red-600 transition-colors"
             >
               {link.label}
             </a>
           ))}
+
           <a
             href="tel:3473020924"
-            className="flex items-center justify-center gap-2 px-5 py-3 bg-red-600 text-white font-bold"
+            className="flex items-center w-fit gap-2 px-5 py-2.5 bg-red-600 hover:bg-slate-900 text-white font-bold rounded-none skew-x-[-10deg] transition-all transform hover:scale-105"
           >
-            <Phone className="w-4 h-4" />
-            CHIAMA ORA
+            <span className="skew-x-10 flex items-center gap-2">
+              <Phone className="w-4 h-4" />
+              CHIAMA
+            </span>
           </a>
         </div>
-      )}
+      </div>
     </header>
   )
 }

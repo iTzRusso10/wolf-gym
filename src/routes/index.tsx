@@ -206,7 +206,7 @@ function WolfGym() {
   const plans = [
     {
       name: 'MENSILE',
-      price: '45€',
+      price: '60€',
       period: 'AL MESE',
       features: [
         'Ingressi illimitati',
@@ -217,14 +217,14 @@ function WolfGym() {
     },
     {
       name: 'TRIMESTRALE',
-      price: '120€',
+      price: '150€',
       period: 'OGNI 3 MESI',
       features: ['Risparmi il 12%', 'Sospensione 15gg', 'Ingressi illimitati'],
       active: true,
     },
     {
       name: 'ANNUALE',
-      price: '400€',
+      price: '600€',
       period: "ALL'ANNO",
       features: [
         'Risparmi il 26%',
@@ -563,7 +563,7 @@ function WolfGym() {
                       className="flex items-center gap-3 text-sm font-bold"
                     >
                       <div
-                        className={`w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 ${plan.active ? 'bg-red-600/20 text-red-500' : 'bg-slate-100 text-slate-700'}`}
+                        className={`w-6 h-6 rounded-full flex items-center justify-center shrink-0 ${plan.active ? 'bg-red-600/20 text-red-500' : 'bg-slate-100 text-slate-700'}`}
                       >
                         <Check size={14} strokeWidth={3} />
                       </div>
